@@ -34,6 +34,7 @@ body {
 }
 .common-p {
   font-size: 0.87rem;
+  line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   margin-bottom: 14px;
@@ -66,7 +67,7 @@ body {
   align-items: center;
 }
 
-.nav-title h2 {
+.nav-title h2, .footer-h2 {
   font-size: 2.25rem;
   color: rgb(230, 83, 60);
   font-weight: 800;
@@ -402,6 +403,111 @@ height: 48px; */
   grid-column: span 2;
   margin-bottom: 30px;
 }
+
+/* ---------team section--------- */
+
+.team{
+  max-width: 1060px;
+  min-height: 781px;
+  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team-info{
+  max-width:671px ;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.team-container{
+  width: 100%;
+  min-height: 604px;
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px;
+  gap: 20px;
+  border-radius: 18px;
+background: rgba(255, 255, 255, 0.1);
+  
+}
+.team-content{
+  /* width:326.67px ; */
+  height: 272px;
+  position: relative;
+}
+.team-content img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.team-content-info{
+  position: absolute;
+  top: 220px;
+  left: 20px;
+}
+/* -------footer---------- */
+.footer{
+  max-width: 1440px;
+  min-height: 420px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-p{
+  font-size: 20px;
+  margin-top: 36px;
+}
+.footer-bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+  justify-content: center;
+  align-items: center;
+}
+.footer-upper{
+  width:1060px ;
+  min-height: 246px;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  
+}
+.footer ul{
+  list-style-type: none;
+}
+.footer-h2{
+  font-size: 4.37rem;
+  margin-bottom: 20px;
+}
+.footer h4{
+  font-size: 2rem;
+font-weight: 700;
+margin-bottom: 40px;
+}
+.footer-1{
+  width: 443px;
+  height: 176px;
+  padding-right: 20px;
+  
+}
+.footer-2{
+  width: 185px;
+  height: 246px;
+}
+.footer-hr{
+  width: 1059.5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 /* -----responsive small device-------- */
 
 @media screen and (max-width: 576px) {
@@ -534,4 +640,23 @@ height: 48px; */
 select {
   width: 100%;
 }
+/* --------team-------- */
+.team-container{
+  grid-template-columns: 1fr;
+}
+.team-content{
+  margin-top: 20px;
+}
+/* -------foooter */
+.footer{
+  padding: 20px;
+}
+.footer-upper{
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-bottom{
+  flex-direction: column;
+}
+
 }
