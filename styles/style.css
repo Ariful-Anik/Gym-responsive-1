@@ -331,10 +331,72 @@ section{
 .bmi-info{
   max-width: 1440px;
   min-height: 487px;
+  margin: 0 auto;
+  margin-top: 70px;
+  border: 1px solid red;
   display: flex;
   justify-content: space-around;
+  align-items: start;
+  background: rgb(34, 34, 34);
+  
+}
+.bmi-info-calculator{
+  max-width: 577px;
+  height: 386px;
+  border: 1px solid red;
+}
+.bmi-info h2{
+  font-size: 2rem;
+font-weight: 900;
+margin-bottom: 14px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-top: 38px;
+}
+th, td {
+  border: 1px solid #444444;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #3c3c3c;
+}
+
+/* -------bmi form-------- */
+
+form{
+  margin-top: 30px;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px; */
+}
+.form-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+
+input, select, option{
+  /* width: 282px; */
+height: 48px;
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.1);
+padding: 12px 40px 12px 20px;
+color: rgba(255, 255, 255, 0.6);
+font-size: 1rem;
+border: none;
+}
+.select-activity{
+  /* width: 577px;
+height: 48px; */
+grid-column: span 2;
+margin-bottom: 30px;
+}
 /* -----responsive small device-------- */
 
 @media screen and (max-width: 576px) {
